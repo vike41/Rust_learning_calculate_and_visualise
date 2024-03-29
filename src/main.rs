@@ -51,19 +51,47 @@ fn draw_triangle(framebuffer: &mut Framebuffer, a: &Vec2, b: &Vec2, c: &Vec2, co
         }
     }
 }
-
-static POINTS: &[Vec2] = &[
-    Vec2::new(0.3, 0.3),
+static TRIANGLE_GREEN: &[Vec2] = &[
+    Vec2::new(0.4, 0.3),
     Vec2::new(0.7, 0.3),
-    Vec2::new(0.5, 0.7),
+    Vec2::new(0.2, 0.7),
+];
 
+static TRIANGLE_RED: &[Vec2] = &[
     Vec2::new(0.1, 0.3),
     Vec2::new(0.5, 0.1),
     Vec2::new(0.2, 0.6),
+];
 
+static TRIANGLE_BLUE: &[Vec2] = &[
     Vec2::new(0.5, 0.7),
     Vec2::new(0.9, 0.7),
     Vec2::new(0.5, 0.9),
+];
+static QUAD_WHITE: &[Vec2] = &[
+    Vec2::new(0.2, 0.2),
+    Vec2::new(0.4, 0.5),
+    Vec2::new(0.6, 0.6),
+    Vec2::new(0.7, 0.7),
+];
+static POINTS: &[Vec2] = &[
+    TRIANGLE_GREEN[0],
+    TRIANGLE_GREEN[1],
+    TRIANGLE_GREEN[2],
+
+    TRIANGLE_RED[0],
+    TRIANGLE_RED[1],
+    TRIANGLE_RED[2],
+
+    TRIANGLE_BLUE[0],
+    TRIANGLE_BLUE[1],
+    TRIANGLE_BLUE[2],
+
+    QUAD_WHITE[0],
+    QUAD_WHITE[1],
+    QUAD_WHITE[2],
+    QUAD_WHITE[3],
+
 ];
 
 fn main() {
